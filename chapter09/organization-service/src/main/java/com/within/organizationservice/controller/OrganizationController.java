@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping(value = "v1/organization")
 public class OrganizationController {
 
-//    @RolesAllowed({"ADMIN", "USER"})
+    @RolesAllowed({"ADMIN", "USER"})
     @GetMapping(value = "/{organizationId}")
     public ResponseEntity<?> getOrganization(@PathVariable("organizationId") String organizationId) {
         return ResponseEntity.ok("조회 성공");
