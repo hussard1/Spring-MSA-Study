@@ -1,0 +1,5 @@
+rootProject.name = 'chapter08'
+include 'gatewayserver'
+include 'eurekaserver'
+include 'configserver'
+include 'licensing-service'
